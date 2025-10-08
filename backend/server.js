@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://fullstack-food-app-lovat.vercel.app/'] 
+    ? ['https://fullstack-food-3tffn64lb-chanti-lingamaiahs-projects.vercel.app/'] 
     : ['http://localhost:3000'],
   credentials: true
 }));
