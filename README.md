@@ -5,7 +5,7 @@ A complete full-stack food delivery application built with React, Node.js, Expre
 ## 🔴 Live Demo
 
 <div align="center">
-  <video controls width="720" poster="frontend/public/images/food-delivery.jpg">
+  <video controls autoplay loop muted playsinline width="720" poster="frontend/public/images/food-delivery.jpg">
     <source src="https://drive.google.com/uc?export=download&id=18t1kaQ68--Oe9EGbblwA5dqnqHRfLj01" type="video/mp4" />
     Your browser doesn't support embedded videos. You can watch it here:
     <a href="https://drive.google.com/file/d/18t1kaQ68--Oe9EGbblwA5dqnqHRfLj01/preview">Google Drive Preview</a>.
