@@ -1,0 +1,252 @@
+/* Signup Page Styles */
+.signup {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem 0;
+}
+
+.signup__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  min-height: 600px;
+}
+
+.signup__content {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.signup__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.signup__subtitle {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+.signup__footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.signup__footer-text {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.signup__footer-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.signup__footer-link:hover {
+  color: #0056b3;
+}
+
+.signup__image {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.signup__image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://cdn.pixabay.com/photo/2017/03/16/13/41/food-delivery-2145030_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.signup__image-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.signup__image-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.signup__image-content p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  line-height: 1.6;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.signup__benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.signup__benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  text-align: left;
+}
+
+.signup__benefit-icon {
+  font-size: 1.5rem;
+  width: 32px;
+  text-align: center;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.signup__benefit h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.signup__benefit p {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin: 0;
+  line-height: 1.4;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup {
+    padding: 1rem 0;
+  }
+  
+  .signup__container {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    min-height: auto;
+  }
+  
+  .signup__content {
+    padding: 2rem;
+  }
+  
+  .signup__image {
+    padding: 2rem;
+    min-height: 300px;
+  }
+  
+  .signup__image-content h2 {
+    font-size: 1.75rem;
+  }
+  
+  .signup__image-content p {
+    font-size: 1rem;
+  }
+  
+  .signup__benefits {
+    gap: 1rem;
+  }
+  
+  .signup__benefit {
+    gap: 0.75rem;
+  }
+  
+  .signup__benefit-icon {
+    font-size: 1.25rem;
+    width: 28px;
+  }
+  
+  .signup__benefit h3 {
+    font-size: 0.9rem;
+  }
+  
+  .signup__benefit p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup__container {
+    margin: 0 1rem;
+  }
+  
+  .signup__content {
+    padding: 1.5rem;
+  }
+  
+  .signup__image {
+    padding: 1.5rem;
+    min-height: 250px;
+  }
+  
+  .signup__title {
+    font-size: 1.75rem;
+  }
+  
+  .signup__subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .signup__image-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .signup__image-content p {
+    font-size: 0.9rem;
+  }
+  
+  .signup__benefits {
+    gap: 0.75rem;
+  }
+  
+  .signup__benefit {
+    gap: 0.5rem;
+  }
+  
+  .signup__benefit-icon {
+    font-size: 1.125rem;
+    width: 24px;
+  }
+  
+  .signup__benefit h3 {
+    font-size: 0.85rem;
+  }
+  
+  .signup__benefit p {
+    font-size: 0.75rem;
+  }
+}
